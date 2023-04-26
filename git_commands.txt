@@ -80,6 +80,7 @@ git rm --cache filename.txt
 
 git restore --staged filename.txt
 	- in case if we accidently made file as untraced then revert by using the restore command.
+	- this also does in case if the file is stagged and want to unstage 
 
 below commands both does same operations
 git restore filename.txt

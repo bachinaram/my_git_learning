@@ -96,3 +96,16 @@ git diff
 
 git diff --staged
 	- difference between staged and last commit
+
+git log 
+	- gives the history of commits with commit information
+
+git log --stat
+	- gives the history of commits with information and files changed
+
+git log -pretty=oneline
+	-gives commits information in oneline with comment
+
+git log --pretty=format:"%H, %ae, %ad : %s"
+	-gives commit Hash, email id, time stamp and comment
+

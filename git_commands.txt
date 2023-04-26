@@ -86,3 +86,6 @@ below commands both does same operations[works only unstagged stage]
 git restore filename.txt
 git checkout -- filename.txt
 	- checkout can be used for many thing for now think it as if a file is modified and but not stagged incase if you want to revert the changes in the file use checkout command
+
+Add git ignoreFiles in repository
+git config --global core.excludesFile $HOME/myproject.gitignore

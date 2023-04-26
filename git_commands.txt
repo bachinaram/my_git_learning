@@ -81,5 +81,7 @@ git rm --cache filename.txt
 git restore --staged filename.txt
 	- in case if we accidently made file as untraced then revert by using the restore command.
 
+below commands both does same operations
+git restore filename.txt
 git checkout -- filename.txt
 	- checkout can be used for many thing for now think it as if a file is modified and but not stagged incase if you want to revert the changes in the file use checkout command

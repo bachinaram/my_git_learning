@@ -89,3 +89,10 @@ git checkout -- filename.txt
 
 Add git ignoreFiles in repository
 git config --global core.excludesFile $HOME/myproject.gitignore
+
+
+git diff
+	- diff between working copy and stage 
+
+git diff --staged
+	- difference between staged and last commit

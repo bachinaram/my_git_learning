@@ -1,0 +1,58 @@
+GIT COMMANDS
+___________________
+git help log
+git log --help
+
+git init
+
+git status
+	-untraced files which are not part of repo or stagging dir
+	-changes to be commited or stagged files
+
+git status -s
+	-M,??,A,D will display files which are modified,added, deleted and known files
+
+git add .
+git add filename.txt
+
+git commit -m "commit message"
+git commit -a -m "add and commits the message"
+
+git diff filename
+git diff 
+	- displays the difference between working copy and stage
+
+git diff --staged filename
+git diff --staged 
+	- displays the difference between repository and stagged changes
+
+git rm filename
+	- removes the file and applies the changes to stage area
+git rm --cached filename
+	- removes the file from git but keep in working dir
+
+
+VIEWING COMMIT HISTORY
+_______________________
+git log 
+	- gives commit history
+git log --stat
+	-gives commit history with file names that modified with each commit
+git log --pretty=oneline
+	-gives commit history in oneline
+git log --pretty=oneline -n 10
+	-gives commit history with last 10 commits
+git log --pretty=format:"%h - %an, %ar : %s"
+	-gives commit history in given format commit hash, user, hours, comment for commit
+
+UNDOING THINGS
+____________________
+git commit --amend
+	-changes the hash commit id but same version of the code, IMP this is possible only when there are no latest commits
+git restore --staged filename
+	- removes the files from stage area but not actual file changes
+git reset HEAD filenam
+	- removes the files from stage area but not actual file changes
+git checkout -- filename
+	- reverts the modified file changes
+	-[DANGEROUS COMMAND] 

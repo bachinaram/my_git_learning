@@ -128,4 +128,9 @@ git restore --staged filename
 	- above command will move file from staged to working copy and it won't undo changes made in the file
 
 
+undo changes in the file [Dangerous command - don't use unless we are absolutely sure]
+git checkout -- filename
+	- This will undo the file changes, it wont work if the file is in stagged directory, only works in working directory
+
+
 

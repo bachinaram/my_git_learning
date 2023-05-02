@@ -92,13 +92,16 @@ git checkout -- filename.txt
 Add git ignoreFiles in repository
 git config --global core.excludesFile $HOME/myproject.gitignore
 
-
+FILE CHANGE DIFFERENCES
+____________________________
 git diff
 	- diff between working copy and stage 
 
 git diff --staged
 	- difference between staged and last commit
 
+CHECK THE HISTORY OF COMMITS
+_____________________________
 git log 
 	- gives the history of commits with commit information
 
@@ -114,5 +117,15 @@ git log --pretty=format:"%H, %ae, %ad : %s"
 git log --pretty=oneline -n 10
 git log --oneline -10
 	- display last 10 commits
+
+UNDOING THE THINGS
+_____________________________
+git commit --amend
+	- make changes to files, add then do git commit --amend which will modify the last commit, Note - it will work if no commit done of top of last commit 
+
+git reset HEAD filename
+git restore --staged filename
+	- above command will move file from staged to working copy and it won't undo changes made in the file
+
 
 

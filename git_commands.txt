@@ -57,6 +57,8 @@ git checkout -- filename
 	- reverts the modified file changes
 	-[DANGEROUS COMMAND] 
 
+git commands
+______________
 git --version
 git help config
 git config --help
@@ -108,4 +110,9 @@ git log -pretty=oneline
 
 git log --pretty=format:"%H, %ae, %ad : %s"
 	-gives commit Hash, email id, time stamp and comment
+
+git log --pretty=oneline -n 10
+git log --oneline -10
+	- display last 10 commits
+
 

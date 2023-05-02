@@ -56,3 +56,30 @@ git reset HEAD filenam
 git checkout -- filename
 	- reverts the modified file changes
 	-[DANGEROUS COMMAND] 
+
+git --version
+git help config
+git config --help
+git config --global user.name "ram pratap bachina"
+git config --global user.email "ram.pratap.bachina@oracle.com"
+git config --global http.proxy http://www-proxy.us.oracle.com:80/
+git clone https://github.com/bachinaram/tcpip-client-server.git 
+	- create copy of existing repository includes every version of file and commit history of project
+
+git init
+	- intializes git repository
+
+git status
+	- Status to check the untracked/tracked files
+
+git add filename.txt
+	- to add untraced files or traced files to stage area for commit
+
+git rm --cache filename.txt
+	- in case if file is stagged want to unrecognize or made it as untracked but it wont remove the file physically but removed from repository
+
+git restore --staged filename.txt
+	- in case if we accidently made file as untraced then revert by using the restore command.
+
+git checkout -- filename.txt
+	- checkout can be used for many thing for now think it as if a file is modified and but not stagged incase if you want to revert the changes in the file use checkout command

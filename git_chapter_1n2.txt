@@ -144,7 +144,20 @@ git show v1.050323.1.L
 git push origin v1.050323.1.L
 git push origin --tags
 	- we have to explicitly move tags to remote repo it wont push as part of code move to remote
+
+
+GIT ALIASES
 -------------
+git config --global alias.co "checkout --"
+	-usage e.g., git co filename
+git config --global alias.unstage "reset HEAD"
+	-usage e.g., git unstage filename
+git config --global alias.ci "commit"
+	-usage e.g., git ci -m "some new changes"
+git config --global alias.log "log --pretty=oneline -n 10"
+	-Usage e.g., git log 
+
+
 git branch
 	- It will list out the branches for the repository
 ----------

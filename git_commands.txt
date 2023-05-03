@@ -60,6 +60,11 @@ git log --pretty=oneline -n 10
 git log --pretty=format:"%h - %an, %ar : %s"
 	-gives commit history in given format commit hash, user, hours, comment for commit
 
+git log origin/main -pretty=oneline
+	- it diplays the local repository changes fetch from remote repo
+
+
+
 UNDOING THINGS
 ____________________
 git commit --amend
@@ -89,6 +94,33 @@ git remote -v
 	- displays shortname and urls tagged to the shortname eg., given below
 	-origin	https://github.com/bachinaram/my_git_learning.git (fetch)
 	-origin	https://github.com/bachinaram/my_git_learning.git (push) 
+
+git remote show <remote_name>
+git remote show origin
+	-More detail information about the remote
+
+git remote rename <remote_name> <new_remote_name>
+git remote rename origin basement
+	-Use above command to rename the remote name
+
+git push origin main
+	- Pushing changes from local repo to remote repo[both remote and local branch names must be same]
+
+git push origin master:main
+	- Pushing changes from local repo master branch to remote repo main branch [Use this if remote and local repo branch names are different]
+
+git fetch origin main
+	- fetches remote branch changes to local repo but wont merge to local directory
+
+git fetch --all
+	-Fetches all registerd remotes and all branches from the remotes
+
+git merge origin/main
+	- merge changes from local repository to working directory
+
+git pull origin main
+	- fetch and merge from remote branch to local repo and local direcotry
+
 --------------
 git branch
 	- It will list out the branches for the repository

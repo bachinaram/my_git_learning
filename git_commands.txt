@@ -78,3 +78,16 @@ git checkout -- filename
 	- reverts the modified file changes
 	-[DANGEROUS COMMAND] 
 
+
+GIT REMOTE REPOSITORIES
+_________________________
+git remote
+	- displays remote repository name if we clone from remote repoitory, default remote repository name is origin
+	- we generally clone the repository to local using "git clone htpps:github.com/bachinaxyz..."
+
+git remote -v
+	- displays shortname and urls tagged to the shortname eg., given below
+	-origin	https://github.com/bachinaram/my_git_learning.git (fetch)
+	-origin	https://github.com/bachinaram/my_git_learning.git (push) 
+
+

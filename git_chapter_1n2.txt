@@ -63,7 +63,8 @@ git log --pretty=format:"%h - %an, %ar : %s"
 git log origin/main -pretty=oneline
 	- it diplays the local repository changes fetch from remote repo
 
-
+git log --oneline --decorate --graph --all
+	- This will give the history of commits with grapgh decoration
 
 UNDOING THINGS
 ____________________

@@ -12,4 +12,10 @@ git checkout <branch_name>
 git checkout testing 
 	- Switch from some branch to testing branch
 
+git checkout -b <branch_name>
+git checkout -b hot_fix
+	- This will create new branch hot_fix and switches to hot_fix branch
+	- git branch hot_fix 
+	- git checkout hot_fix
+
 

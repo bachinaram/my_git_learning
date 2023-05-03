@@ -1,0 +1,15 @@
+GIT BRANCHES
+-----------------
+
+git branch
+	- Displays list of branches in the local repository
+
+git branch <branch_name>
+git branch testing
+	- Creates new branch testing 
+
+git checkout <branch_name>
+git checkout testing 
+	- Switch from some branch to testing branch
+
+

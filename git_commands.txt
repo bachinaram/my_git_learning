@@ -92,3 +92,4 @@ git remote -v
 
 git branch
 	- It will list out the branches for the repository
+----------

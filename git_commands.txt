@@ -90,4 +90,5 @@ git remote -v
 	-origin	https://github.com/bachinaram/my_git_learning.git (fetch)
 	-origin	https://github.com/bachinaram/my_git_learning.git (push) 
 
-
+git branch
+	- It will list out the branches for the repository

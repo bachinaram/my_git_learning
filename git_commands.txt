@@ -121,7 +121,30 @@ git merge origin/main
 git pull origin main
 	- fetch and merge from remote branch to local repo and local direcotry
 
+
+GIT TAGGING
 --------------
+git tag <tagname>
+git tag v1.050323.1.L
+	- creates light weight tag which is pointer to specific commit
+
+git tag -a v1.050323.1.A -m "creating first annotation tag"
+	-This creates annotation tag which is stored as full objects in database.
+
+git tag
+	-displays created tags
+
+git tag -l "v1.*"
+	-displays tags starting with v1.*
+
+git show <tagname>
+git show v1.050323.1.L
+	-Diplay information about given tag
+
+git push origin v1.050323.1.L
+git push origin --tags
+	- we have to explicitly move tags to remote repo it wont push as part of code move to remote
+-------------
 git branch
 	- It will list out the branches for the repository
 ----------

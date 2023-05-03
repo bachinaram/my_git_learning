@@ -19,10 +19,10 @@ git checkout testing
 BRANCH CREATION AND SWITCHING AT SAME TIME
 ______________________________________________
 git checkout -b <branch_name>
-git checkout -b hot__fix
+git checkout -b hotfix
 	- This will create new branch hot_fix and switches to hot_fix branch
-	- git branch hot__fix 
-	- git checkout hot_fix
+	- git branch hotfix 
+	- git checkout hotfix
 
 
 

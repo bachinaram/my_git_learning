@@ -65,6 +65,22 @@ git push origin main
 __________________________________
 
 
+HOW TO TRACK ALL BRANCHES IN LOCAL WHICH ARE AHEAD OR BEHIND THE REMOTE BRANCH
+_____________________________________________________________________________
+git branch -vv
+	- iss53     7e424c3 [origin/iss53: ahead 2] forgot the brackets
+  	- master    1ae2a45 [origin/master] deploying index fix
+	- * serverfix f8674d9 [teamone/server-fix-good: ahead 3, behind 1] new change
+  	- testing   5ea463a trying something new
+
+	- testing is not tracking branch whereas rest all are tracking with remote branch, we can see if they are behind or ahead of remote branch.
+
+
+HOW TO DELETE THE REMOTE BRANCH
+_______________________________
+git push <remote_name> --delete <remote_branch_name>
+git push basement --delete hot_fix
+	- delete the remote branch from remote repository
 
 
 

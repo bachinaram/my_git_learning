@@ -46,4 +46,25 @@ git merge p1_fix_branch
 	- p1_fix_branch code will move to main and both main and p1_fix_branch will be in sync
 
 
+HOW TO RESOLVE CONFLICTS MANUALLY
+_________________________________
+git checkout main
+git merge hot_fix
+	-now conflict will araise
+git status
+	-to check the list of files in conflict state
+git mergetool
+	-this may try to launch mergetool, if not configured then it will launch default UI tools
+	-Now from the UI we can select source, destination, both or neither
+	-close the UI then 
+git add .
+git commit -m "conflicts resolution"
+git log --decorate --oneline --graph --all
+git pull origin main
+git push origin main
+__________________________________
+
+
+
+
 

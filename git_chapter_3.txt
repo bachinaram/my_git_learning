@@ -84,3 +84,28 @@ git push basement --delete hot_fix
 
 
 
+
+GIT MERGE VS GIT REBASING
+__________________________
+
+1. GIT MERGE does 3 way merge
+	- new commit commit is created when both branches merges
+2. GIT REBASE
+	- Identifies the common commit of two branches, from the new branch it collects each commit and places on top of head in another branch.
+	- If there are 3 commits in new branch then 3 commits are placed in HEAD of other branch
+	- For every commit new commit gets created, eventhough old cmmits are los but we can identify from the comments.
+	- Ultimately it all looks like linear
+	
+
+
+HOW TO DO MERGE BETWEEN BRANCHES USING GIT MERGE
+_______________________________________________
+git checkout main
+git merge hot_fix_branch
+
+HOW TO DO MERGE BETWEEN BRANCHES USING THE REBASE
+_________________________________________________
+git checkout main
+git rebase hot_fix
+
+main branch will get hot_fix branch changes, we ahvve to do it in reverse order for both to be in sync

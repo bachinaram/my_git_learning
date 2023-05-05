@@ -1,0 +1,11 @@
+HOW TO CREATE GIT REMOTE REPO ON TOP OF LINUX/MAC/WINDOWS SHARE
+______________________________________________________________
+1. Go to the path where we want to create repo
+2. cd /users/Desktop/new_git_repo/project
+3. git init --bare
+4. git branch -m main
+5. Now go to the existing git workspace to push the code to newly create empty repo
+6. cd /user/Desktop/Documents/my_git_learning
+7. git remote add origin /users/Desktop/new_git_repo/project
+8. git push origin main
+ 

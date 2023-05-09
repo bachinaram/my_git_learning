@@ -8,6 +8,10 @@ git branch <branch_name>
 git branch testing
 	- Creates new branch testing 
 
+git branch -a
+	- list all local and remote branches of current git
+git branch -r
+	- list only remote branches of git
 
 GIT BRANCH SWITCHING
 ______________________

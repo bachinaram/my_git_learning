@@ -84,6 +84,19 @@ git checkout -- filename
 	- reverts the modified file changes
 	-[DANGEROUS COMMAND] 
 
+git revert HEAD
+	-revert the latest commit
+git revert HEAD 
+	-revert the latest commit and skip the message editor,
+	-instead of deleting old commit git creates new commit 
+git revert HEAD~1
+	-Reverts last wo commits
+git reset <hash>
+git reset abcssh1
+	- reset to the commit with hash abcsh1
+
+
+
 
 GIT REMOTE REPOSITORIES
 _________________________

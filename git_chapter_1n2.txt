@@ -95,6 +95,14 @@ git reset <hash>
 git reset abcssh1
 	- reset to the commit with hash abcsh1
 
+HOW TO REVERT A COMMITTED FILE
+______________________________
+1. First get the commits for the file we want to rever
+git log --oneline filename.txt
+
+2. From the list of commits to which commit you want to revert give it in the below commit
+git checkout <hash_sha> -- filename.txt
+git commit -m "reverting and new commit to filename.txt"
 
 
 

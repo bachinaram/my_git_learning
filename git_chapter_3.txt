@@ -113,3 +113,7 @@ git checkout main
 git rebase hot_fix
 
 main branch will get hot_fix branch changes, we have to do it in reverse order for both to be in sync
+
+
+new line added to check the commit process
+

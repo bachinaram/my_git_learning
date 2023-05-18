@@ -175,3 +175,4 @@ git config --global alias.log "log --pretty=oneline -n 10"
 git branch
 	- It will list out the branches for the repository
 ----------
+__________

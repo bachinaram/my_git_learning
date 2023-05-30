@@ -1,0 +1,30 @@
+Check GIT objects
+_________________
+git show <commit-id>
+git show e8619bb
+
+
+git show HEAD
+gives the information about head pointer/committed files.
+
+GIT ANCESTRY
+_________________
+git show HEAD^
+	- shows the commit information of previous commit id of HEAD commit id
+
+git show HEAD^^^^^
+	- show the file changes and commit information about 5th parent of HEAD.
+
+git show de13484^^
+	- displays parent of commit id de13484
+
+git show main^
+	- displays parent commit id of main branch HEAD commit
+
+git show HEAD~
+git show HEAD~1
+git show HEAD^
+	- diplays the parent commit id of HEAD
+
+git show HEAD~4
+	- displays the 4th commit id and file change information of HEAD 
